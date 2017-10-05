@@ -1,0 +1,21 @@
+[19-Sep-2017 16:22:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:22:37 UTC] PHP Stack trace:
+[19-Sep-2017 16:22:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[19-Sep-2017 16:25:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:25:22 UTC] PHP Stack trace:
+[19-Sep-2017 16:25:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[19-Sep-2017 16:26:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:26:21 UTC] PHP Stack trace:
+[19-Sep-2017 16:26:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[19-Sep-2017 16:28:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:28:02 UTC] PHP Stack trace:
+[19-Sep-2017 16:28:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[19-Sep-2017 16:35:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:35:05 UTC] PHP Stack trace:
+[19-Sep-2017 16:35:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[19-Sep-2017 16:36:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab5cw/index.php on line 45
+[19-Sep-2017 16:36:15 UTC] PHP Stack trace:
+[19-Sep-2017 16:36:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab5cw/index.php:0
+[05-Oct-2017 13:40:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/lab4cw/index.php on line 65
+[05-Oct-2017 13:40:38 UTC] PHP Stack trace:
+[05-Oct-2017 13:40:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab4cw/index.php:0

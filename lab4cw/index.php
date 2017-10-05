@@ -10,6 +10,9 @@
     }
 
     // Get name for current category
+    $query = 'SELECT firstName, lastName from customers orde by lastName';
+    $customers = $db->query($customers);
+    
     $query = "SELECT * FROM categories
               WHERE categoryID = $category_id";
     $category = $db->query($query);
@@ -32,7 +35,7 @@
 
 <!-- the head section -->
 <head>
-    <title>My Guitar Shop</title>
+    <title>My Shop</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
@@ -48,52 +51,30 @@
 
         <h1>Product List</h1>
 
-        <div id="sidebar">
-            <!-- display a list of categories -->
-            <h2>Categories</h2>
-            <ul class="nav">
-            <?php foreach ($categories as $category) : ?>
-                <li>
-                <a href="?category_id=<?php echo $category['categoryID']; ?>">
-                    <?php echo $category['categoryName']; ?>
-                </a>
-                </li>
-            <?php endforeach; ?>
-            </ul>
-        </div>
 
         <div id="content">
             <!-- display a table of products -->
             <h2><?php echo $category_name; ?></h2>
             <table>
                 <tr>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th class="right">Price</th>
-                    <th>&nbsp;</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Full Name</th>
+                    
                 </tr>
-                <?php foreach ($products as $product) : ?>
+                <?php foreach ($customers as $customers) : ?>
                 <tr>
-                    <td><?php echo $product['productCode']; ?></td>
-                    <td><?php echo $product['productName']; ?></td>
-                    <td class="right"><?php echo $product['listPrice']; ?></td>
-                    <td><form action="delete_product.php" method="post"
-                              id="delete_product_form">
-                        <input type="hidden" name="product_id"
-                               value="<?php echo $product['productID']; ?>" />
-                        <input type="hidden" name="category_id"
-                               value="<?php echo $product['categoryID']; ?>" />
-                        <input type="submit" value="Delete" />
-                    </form></td>
+                    <td><?php echo $product['firstName']; ?></td>
+                    <td><?php echo $product['lastName']; ?></td>
                 </tr>
                 <?php endforeach; ?>
             </table>
-            <p><a href="add_product_form.php">Add Product</a></p>
+            
         </div>
     </div>
 
     <div id="footer">
-        <p>&copy; <?php echo date("Y"); ?> My Guitar Shop, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?> My Shop, Inc.</p>
     </div>
 
     </div><!-- end page -->
